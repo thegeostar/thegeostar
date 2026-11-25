@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="340" viewBox="0 0 840 340" role="img" aria-label="Pixel Studio desk banner for Eng Dararoth">
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5899d6"/>
+      <stop offset="100%" stop-color="#9cc7ec"/>
+    </linearGradient>
+    <linearGradient id="wallGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2234"/>
+      <stop offset="100%" stop-color="#141b29"/>
+    </linearGradient>
+    <clipPath id="monitorClip">
+      <rect x="314" y="122" width="212" height="96" rx="2"/>
+    </clipPath>
+    <clipPath id="windowClip">
+      <rect x="52" y="54" width="166" height="122"/>
+    </clipPath>
+  </defs>
+  <style>
+    .commit-scroll {
+      animation: scrollUp 14s linear infinite;
+    }
+    @keyframes scrollUp {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-84px); }
+    }
+    .cloud-drift {
+      animation: drift 16s ease-in-out infinite alternate;
+    }
+    @keyframes drift {
+      0% { transform: translateX(-6px); }
+      100% { transform: translateX(8px); }
+    }
+    .rain-drop {
+      animation: rainFall 1.1s linear infinite;
+    }
+    @keyframes rainFall {
+      0% { transform: translateY(-10px); opacity: 0.9; }
+      100% { transform: translateY(30px); opacity: 0.1; }
+    }
+    .cat-breathe {
+      animation: breathe 3.2s ease-in-out infinite;
+      transform-origin: 676px 286px;
+    }
+    @keyframes breathe {
+      0%, 100% { transform: scaleY(1); }
+      50% { transform: scaleY(1.06); }
+    }
+    .steam {
+      animation: steamRise 2.6s ease-in-out infinite;
+    }
+    @keyframes steamRise {
+      0% { transform: translateY(4px); opacity: 0.0; }
+      50% { opacity: 0.55; }
+      100% { transform: translateY(-10px); opacity: 0.0; }
+    }
+  </style>
+
+  <!-- Room backdrop -->
+  <rect width="840" height="340" rx="12" fill="url(#wallGrad)"/>
+  <!-- Floor -->
+  <rect x="0" y="274" width="840" height="66" fill="#2c221b"/>
+  <rect x="0" y="274" width="840" height="6" fill="#3d2f24"/>
+  <!-- Baseboard -->
+  <rect x="0" y="266" width="840" height="8" fill="#1e273a"/>
+
+  <!-- Window -->
+  <g clip-path="url(#windowClip)">
+    <rect x="52" y="54" width="166" height="122" fill="url(#skyGrad)"/><rect x="174" y="68" width="24" height="24" fill="#ffd43b"/><rect x="178" y="72" width="16" height="16" fill="#fff3bf"/><g class="cloud-drift" fill="#e9ecef"><rect x="66" y="88" width="44" height="14"/><rect x="74" y="80" width="26" height="10"/><rect x="130" y="108" width="52" height="14"/><rect x="140" y="100" width="30" height="10"/></g>
+  </g>
+  <!-- Window frame & mullions -->
+  <rect x="46" y="48" width="178" height="134" fill="none" stroke="#2d3952" stroke-width="12"/>
+  <rect x="132" y="54" width="8" height="122" fill="#2d3952"/>
+  <rect x="52" y="112" width="166" height="8" fill="#2d3952"/>
+  <rect x="40" y="182" width="190" height="10" fill="#3a4966"/>
+  <text x="135" y="206" text-anchor="middle" fill="#8b949e" font-size="10" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">31°C · Partly Cloudy</text>
+
+  <!-- Nameplate sign -->
+  <rect x="276" y="42" width="288" height="44" rx="4" fill="#0d1117" stroke="#3b4c6b" stroke-width="3"/>
+  <rect x="282" y="48" width="276" height="32" rx="2" fill="#161f30"/>
+  <text x="420" y="70" text-anchor="middle" fill="#e6edf3" font-size="20" font-weight="700" letter-spacing="4" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">ENG DARAROTH</text>
+
+  <!-- Wall clock -->
+  <circle cx="710" cy="70" r="24" fill="#f1f3f5" stroke="#3b4c6b" stroke-width="5"/>
+  <line x1="710" y1="70" x2="710" y2="56" stroke="#1f2937" stroke-width="3" stroke-linecap="round" transform="rotate(350.0 710 70)"/>
+  <line x1="710" y1="70" x2="710" y2="52" stroke="#374151" stroke-width="2" stroke-linecap="round" transform="rotate(240.0 710 70)"/>
+  <circle cx="710" cy="70" r="3" fill="#e03131"/>
+
+  <!-- Bookshelf -->
+  <rect x="616" y="166" width="168" height="10" fill="#5c4033"/>
+  <rect x="626" y="176" width="10" height="14" fill="#422d23"/>
+  <rect x="764" y="176" width="10" height="14" fill="#422d23"/>
+  <rect x="636" y="128" width="16" height="38" fill="#c6538c"/><rect x="639" y="134" width="10" height="3" fill="#ffffff" opacity="0.35"/><rect x="656" y="132" width="16" height="34" fill="#3572A5"/><rect x="659" y="138" width="10" height="3" fill="#ffffff" opacity="0.35"/><rect x="676" y="126" width="16" height="40" fill="#e34c26"/><rect x="679" y="132" width="10" height="3" fill="#ffffff" opacity="0.35"/><rect x="696" y="134" width="16" height="32" fill="#f1e05a"/><rect x="699" y="140" width="10" height="3" fill="#ffffff" opacity="0.35"/>
+
+  <!-- Lower shelf -->
+  <rect x="616" y="218" width="168" height="10" fill="#5c4033"/>
+  <rect x="626" y="228" width="10" height="12" fill="#422d23"/>
+  <rect x="764" y="228" width="10" height="12" fill="#422d23"/>
+
+  <!-- Desk -->
+  <rect x="256" y="238" width="328" height="16" fill="#6e472b"/>
+  <rect x="256" y="254" width="328" height="6" fill="#52331d"/>
+  <!-- Desk legs -->
+  <rect x="270" y="260" width="16" height="54" fill="#52331d"/>
+  <rect x="554" y="260" width="16" height="54" fill="#52331d"/>
+
+  <!-- Desk lamp -->
+  <rect x="278" y="232" width="26" height="6" fill="#3d495c"/>
+  <rect x="288" y="176" width="6" height="56" fill="#4d5c75"/>
+  <rect x="278" y="166" width="34" height="14" fill="#f59f00"/>
+  <polygon points="278,180 312,180 330,238 264,238" fill="#ffd43b" opacity="0.10"/>
+
+  <!-- Monitor -->
+  <rect x="304" y="112" width="232" height="114" rx="6" fill="#2b3445" stroke="#45536b" stroke-width="3"/>
+  <rect x="314" y="122" width="212" height="96" rx="2" fill="#0d1117"/>
+  <!-- Monitor stand -->
+  <rect x="404" y="226" width="32" height="12" fill="#2b3445"/>
+  <rect x="386" y="234" width="68" height="6" fill="#3d495c"/>
+  <!-- Scrolling commits inside monitor -->
+  <g clip-path="url(#monitorClip)">
+    <g transform="translate(314, 122)">
+      <g class="commit-scroll">
+        <text x="8" y="14" fill="#7ee787" font-size="9.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">&gt; e-commerce: Add blog and chatbot…</text><text x="8" y="28" fill="#7ee787" font-size="9.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">&gt; e-commerce: Initial commit: Djang…</text><text x="8" y="42" fill="#7ee787" font-size="9.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">&gt; oceaneye: OceanEye: underwater sp…</text><text x="8" y="56" fill="#7ee787" font-size="9.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">&gt; ml-math: Add Part X architectures…</text><text x="8" y="70" fill="#7ee787" font-size="9.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">&gt; ml-math: Add author byline</text><text x="8" y="84" fill="#7ee787" font-size="9.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">&gt; ml-math: Initial commit: ML math…</text><text x="8" y="98" fill="#7ee787" font-size="9.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">&gt; the-book: Ship the cover images i…</text><text x="8" y="112" fill="#7ee787" font-size="9.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">&gt; the-book: Fail the deploy when th…</text><text x="8" y="126" fill="#7ee787" font-size="9.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">&gt; e-commerce: Add blog and chatbot…</text><text x="8" y="140" fill="#7ee787" font-size="9.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">&gt; e-commerce: Initial commit: Djang…</text><text x="8" y="154" fill="#7ee787" font-size="9.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">&gt; oceaneye: OceanEye: underwater sp…</text><text x="8" y="168" fill="#7ee787" font-size="9.5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">&gt; ml-math: Add Part X architectures…</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Coffee mug + steam -->
+  <rect x="548" y="218" width="18" height="20" rx="2" fill="#f1f3f5"/>
+  <rect x="566" y="222" width="6" height="10" fill="none" stroke="#f1f3f5" stroke-width="3"/>
+  <g class="steam" fill="#ced4da">
+    <rect x="552" y="206" width="3" height="8"/>
+    <rect x="559" y="202" width="3" height="10"/>
+  </g>
+
+  <!-- Chair (behind desk front) -->
+  <rect x="400" y="260" width="40" height="8" fill="#2b3445"/>
+  <rect x="416" y="268" width="8" height="36" fill="#3d495c"/>
+  <rect x="396" y="302" width="48" height="6" fill="#2b3445"/>
+
+  <!-- Potted plant -->
+  <rect x="122" y="250" width="36" height="28" fill="#b85d3b"/>
+  <rect x="118" y="244" width="44" height="8" fill="#cf6e48"/>
+  <rect x="136" y="216" width="8" height="28" fill="#2f9e44"/>
+  <rect x="120" y="224" width="16" height="10" fill="#40c057"/>
+  <rect x="144" y="218" width="18" height="10" fill="#40c057"/>
+  <rect x="126" y="206" width="20" height="10" fill="#51cf66"/>
+
+  <!-- Sleeping pixel cat -->
+  <g class="cat-breathe">
+    <rect x="652" y="274" width="42" height="18" rx="4" fill="#e69b4c"/>
+    <rect x="688" y="268" width="20" height="20" rx="3" fill="#e69b4c"/>
+    <!-- Ears -->
+    <rect x="690" y="262" width="6" height="6" fill="#e69b4c"/>
+    <rect x="700" y="262" width="6" height="6" fill="#e69b4c"/>
+    <!-- Closed eyes -->
+    <rect x="693" y="276" width="4" height="2" fill="#2c221b"/>
+    <rect x="701" y="276" width="4" height="2" fill="#2c221b"/>
+    <!-- Stripes & tail -->
+    <rect x="662" y="274" width="5" height="8" fill="#c77b2e"/>
+    <rect x="674" y="274" width="5" height="8" fill="#c77b2e"/>
+    <rect x="636" y="284" width="18" height="6" rx="2" fill="#e69b4c"/>
+  </g>
+</svg>
